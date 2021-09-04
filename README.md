@@ -1,10 +1,3 @@
-Group Members                    ID               Department
-1. Biruk Tesfaye .............. ATR/9484/11 ....... IT
-2. Bonson Demssie ............. ATR/7795/11 ....... IT
-3. Kaleb Fekadu ............... ATR/6065/11 ....... IT
-4. Murad Abdella .............. ATR/0054/11 ....... Software
-5. Mathewos Worku ............. ETR/1954/11 ....... Software
-
 # Project title
 
 Covid Vaccination Application
@@ -21,4 +14,13 @@ admin can make a schedule for vaccination
 admin can add and remove users and vaccination team members from the schedule.
 The exact date and time for vaccination will be provided.
 covid vaccination team members will be informed about upcoming requests.
+
+
+# Group Members                    ID               Department
+1. Biruk Tesfaye .............. ATR/9484/11 ....... IT
+2. Bonson Demssie ............. ATR/7795/11 ....... IT
+3. Kaleb Fekadu ............... ATR/6065/11 ....... IT
+4. Murad Abdella .............. ATR/0054/11 ....... Software
+5. Mathewos Worku ............. ETR/1954/11 ....... Software
+
 
