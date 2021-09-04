@@ -1,16 +1,24 @@
-# covid_vaccination
+Group Members                    ID               Department
+1. Biruk Tesfaye .............. ATR/9484/11 ....... IT
+2. Bonson Demssie ............. ATR/7795/11 ....... IT
+3. Kaleb Fekadu ............... ATR/6065/11 ....... IT
+4. Murad Abdella .............. ATR/0054/11 ....... Software
+5. Mathewos Worku ............. ETR/1954/11 ....... Software
 
-A new Flutter project.
+# Project title
 
-## Getting Started
+Covid Vaccination Application
+  Most people don't get vaccinated or they get vaccinated illegally.This
+project aims at solving this problem. Admins can login and manage both users 
+and other members like vaccination team members. This team members will be 
+appointed a location and a certain amount of vaccine takers.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+# Features list
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+users can login and request for vaccination.
+admin can make a schedule for vaccination
+admin can add and remove users and vaccination team members from the schedule.
+The exact date and time for vaccination will be provided.
+covid vaccination team members will be informed about upcoming requests.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
