@@ -1,7 +1,5 @@
-# Project title
-
-Covid Vaccination Application
-  Most people don't get vaccinated or they get vaccinated illegally.This
+# Project title : Covid Vaccination Application
+ Most people don't get vaccinated or they get vaccinated illegally.This
 project aims at solving this problem. Admins can login and manage both users 
 and other members like vaccination team members. This team members will be 
 appointed a location and a certain amount of vaccine takers.
