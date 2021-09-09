@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:covid_vaccination/bloc/form_submission.dart';
 import 'package:covid_vaccination/bloc/signup/signup_bloc.dart';
 import 'package:covid_vaccination/bloc/signup/signup_event.dart';
@@ -9,8 +11,27 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 class Signup extends StatelessWidget {
   final _formkey = GlobalKey<FormState>();
   final inputFieldStyle = InputDecoration(
+    fillColor: Colors.white,
+    filled: true,
     border: OutlineInputBorder(),
   );
+
+  Widget backgroundImage() {
+    return Container(
+      decoration: new BoxDecoration(
+        image: new DecorationImage(
+          image: new ExactAssetImage('assets/images/corona.jpg'),
+          fit: BoxFit.cover,
+        ),
+      ),
+      child: new BackdropFilter(
+        filter: new ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
+        child: new Container(
+          decoration: new BoxDecoration(color: Colors.white.withOpacity(0.0)),
+        ),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +40,17 @@ class Signup extends StatelessWidget {
         create: (context) => SignupBloc(
           authreposignup: context.read<AuthRepositorysignup>(),
         ),
-        child: _signupform(),
+        child: Stack(
+          children: [
+            backgroundImage(),
+            Center(
+              child: Container(
+                width: 500.0,
+                child: _signupform(),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
