@@ -1,7 +1,7 @@
 import 'package:covid_vaccination/bloc/form_submission.dart';
-import 'package:covid_vaccination/bloc/login_bloc.dart';
-import 'package:covid_vaccination/bloc/login_event.dart';
-import 'package:covid_vaccination/bloc/login_state.dart';
+import 'package:covid_vaccination/bloc/login/login_bloc.dart';
+import 'package:covid_vaccination/bloc/login/login_event.dart';
+import 'package:covid_vaccination/bloc/login/login_state.dart';
 import 'package:covid_vaccination/repository/authentication_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
