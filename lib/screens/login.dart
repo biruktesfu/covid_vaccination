@@ -8,6 +8,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 class login extends StatelessWidget {
   final _formkey = GlobalKey<FormState>();
+  final inputFieldStyle = InputDecoration(
+    border: OutlineInputBorder(),
+  );
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +35,13 @@ class login extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             _username(),
+            SizedBox(
+              height: 20.0,
+            ),
             _password(),
+            SizedBox(
+              height: 20.0,
+            ),
             _loginButton(),
           ],
         ),
@@ -44,8 +53,8 @@ class login extends StatelessWidget {
     return BlocBuilder<LoginBloc, LoginState>(
       builder: (context, state) {
         return TextFormField(
-          decoration: InputDecoration(
-            hintText: 'Username',
+          decoration: inputFieldStyle.copyWith(
+            hintText: 'User Name',
           ),
           validator: (value) =>
               state.isValidUsername ? null : 'invalid username',
@@ -63,8 +72,8 @@ class login extends StatelessWidget {
       builder: (context, state) {
         return TextFormField(
           obscureText: true,
-          decoration: InputDecoration(
-            hintText: 'password',
+          decoration: inputFieldStyle.copyWith(
+            hintText: 'Password',
           ),
           validator: (value) =>
               state.isValidpassword ? null : "invalid password",
