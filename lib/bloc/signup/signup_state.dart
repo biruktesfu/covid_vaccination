@@ -46,6 +46,7 @@ class SignupState {
       username: username ?? this.username,
       phonenumber: phonenumber ?? this.phonenumber,
       password: password ?? this.password,
+      retypePassword: retypePassword ?? this.retypePassword,
       formStatus: formStatus ?? this.formStatus,
     );
   }
