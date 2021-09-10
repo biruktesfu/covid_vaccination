@@ -8,7 +8,7 @@ import 'package:covid_vaccination/repository/auth_repo_signup.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class Signup extends StatelessWidget {
+class signup extends StatelessWidget {
   final _formkey = GlobalKey<FormState>();
   final inputFieldStyle = InputDecoration(
     fillColor: Colors.white,
